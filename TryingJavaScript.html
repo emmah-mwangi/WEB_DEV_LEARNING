@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trying JavaScript</title>
+</head>
+<body>
+    <p id="demo">This is a paragraph.</p>
+<script>
+    // Your JavaScript code here
+    document.write("Hello, this is a simple JavaScript example!" + "<br>");
+    document.write(45+10 + "<br>");
+    document.getElementById("demo").innerHTML = "This is a demo paragraph.";
+</script>
+<button type="button"
+onclick="document.getElementById('myBulb').src='images/LIGHT BULB ON 3.jpg'">
+Turn On
+</button>
+
+<img id="myBulb"
+src="images/LIGHT BULB OFF.jpg"
+alt="Bulb Image"
+width="200"
+height="250">
+
+<button type="button"
+onclick="document.getElementById('myBulb').src='images/LIGHT BULB OFF.jpg'">
+Turn Off
+</button>
+
+
+<p> 56+78 </p>
+<br>
+    <!--window.alert("This is an alert box!");
+    console.log(23545-1234);--> 
+
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Email</th>
+            <th>Action</th>
+        </tr>
+        <tr>
+            <td>John Doe</td>
+            <td>30</td>
+            <td>johndoe@gmail.com</td>
+            <td>
+                <button type="button" onclick="alert('User:John Doe')">View User</button>
+                <button type="button" onclick="return confirm('Are you sure you want to delete User:John Doe?')">Delete</button>
+            </td>
+        </tr>
+    </table>
+    <script> 
+        //var userName = "Anna Smith";
+        //document.write("<br> Welcome," + userName + "!" + "<br>");
+        var userName = " Anna Smith";  // variable declaration and initialization
+        let userAge = 28;  // variable declaration and initialization
+        document.write("<br> Her name is" + userName + " and she is " + userAge + " years old." + "<br>");
+        var score = 85;  // variable declaration and initialization
+        score += 10; // score is now 95
+        document.write("<br> New score: " + score + "<br>");
+
+        const num1 = 5;
+        const num2 = 10;
+        const sum = num1 + num2;
+        document.write("<br> The sum of " + num1 + " and " + num2 + " is: " + sum + "<br>");
+
+
+        const age = 20;
+        age += 5;// This will cause an error and won't display anything because age is a constant
+        document.write("<br> New age: " + age + "<br>");
+
+
+    </script>
+    <script>
+    let fullname = prompt("Please enter your full name");
+    document.write("<h2>Hello, " + fullname + "!</h2>");
+</script>
+    <br>
+    <br>
+
+</body>
+</html>
