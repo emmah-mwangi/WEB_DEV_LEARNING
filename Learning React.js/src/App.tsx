@@ -1,4 +1,4 @@
-import Greetings from './Content';
+import Greetings from './COMPONENTS/Content';
 function App() {
   return (
     < >
